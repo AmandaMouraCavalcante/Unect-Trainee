@@ -1,0 +1,128 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wdth,wght@0,75..100,300..800;1,75..100,300..800&display=swap');
+
+:root {
+	--white-bg: #ebdacc;
+	--medium-brown-bg: #80451f;
+	--white-bg-form: #f5f3ed;
+	--white-bg-input: #f5f5f5;
+
+	--light-brown-nav: #b2784a;
+	--medium-brown: #8f542e;
+
+	--black-font: #1f0c00;
+	--white-font: #f0f0f0;
+
+	--beige-detail: #fbc9a8;
+	--medium-brown-detail: #b2784a;
+
+	--shadow-contact-box: -4px 7px 29px 6px rgba(31, 12, 0, 0.2);
+}
+
+header{
+    width: 100%;
+    height: 64px;
+    background-color: #57290B;
+    font-family: "Cormorant Garamond";
+    color: #F0F0F0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 21.8px;
+    position: fixed;
+    z-index: 2;
+    
+}
+
+nav{
+    margin-left: 119px;
+    margin-right: 119px;
+    
+}
+
+.Cabeçalho-item{
+    display: none;
+}
+
+#Cabeçalho-contato{
+    display: none;
+}
+
+.Linhas-Estilo{
+    margin-left: 1.2dvh;
+    width: 43px;
+    height: 2px;
+    background-color: var(--medium-brown-detail);
+    border-radius: 1px;
+    align-items: center;
+}
+  
+.Logo{
+	display: none;
+}
+
+.mobile-logo-span{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	width: 100dvw;
+	height: 100%;
+}
+
+.mobile-logo-text{
+	line-height: 22px;
+	font-size: 18px;
+	font-family: "Cormorant Garamond", serif;
+	font-weight: 400;
+}
+
+.mobile-logo{
+	width: 25px;
+	height: 32px;
+	margin-right: 200px;
+	position: absolute;
+}
+
+@media screen and (min-width: 1366px){
+
+    header{
+		height: 100px;
+	}
+
+    .Logo{
+		display: flex;
+	}
+
+	.mobile-logo-span{
+		display: none;
+	}
+    
+	.Cabeçalho-Parte{
+		width: 100%;
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		align-items: center;
+		height: 100%;
+		padding-top: 7px;
+	}
+	
+	.Cabeçalho-item{
+		color: inherit;
+		text-decoration: none;
+		display: block;
+		font-family: "Cormorant Garamond", serif;
+		font-weight: 700;
+		position: relative;
+	}
+	
+	#Cabeçalho-contato{
+		display: flex;
+		align-items: center;
+		gap: 10px;
+	}
+    
+}
